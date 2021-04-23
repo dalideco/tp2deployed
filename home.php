@@ -40,7 +40,13 @@ $personnes=$Repo->findAll();
         <td><?= $personne->id ?></td>
         <td><?= $personne->mail ?></td>
         <td><?= $personne->password ?></td> 
-        <td><?= $personne->isadmin?></td>   
+        <td>
+            <?php if($personne->isadmin==1){?>
+                yes
+            <?php }else{?>
+                no
+            <?php } ?>
+        </td>   
         <td><img style="width: 100px;height:100px;object-fit:cover; border-radius:50%" src="pictures/<?= $personne->image?>"></img></td>
         <td>
         <span>

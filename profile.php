@@ -4,7 +4,6 @@
     $repo = new PersonneRepository();
     $id = $_GET['id'];
     $information = $repo->findById($id);
-    var_dump($information);
     include_once 'fragments/header.php'
     
 ?>

@@ -78,5 +78,13 @@ $personnes=$Repo->findAll();
     </tr>
 </table>
 <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+<script>
+    const homeBut = document.querySelector('#homeBut');
+    const logsBut = document.querySelector('#logsBut')
+    if(logsBut.classList.contains("active"))
+        logsBut.classList.remove("active");
+    if(!(homeBut.classList.contains("active")))
+        homeBut.classList.add("active");
+</script>
 </body>
 </html>

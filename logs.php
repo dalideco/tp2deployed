@@ -44,5 +44,24 @@
             </tr>
         </tbody>
     </table>
+
+    <script>
+        const homeBut = document.querySelector('#homeBut');
+        const logsBut = document.querySelector('#logsBut')
+        if(homeBut.classList.contains("active"))
+            homeBut.classList.remove("active");
+        if(!(logsBut.classList.contains("active")))
+            logsBut.classList.add("active");
+    </script>
     
 </div>
+<script>
+    const homeBut = document.querySelector('#homeBut');
+    const logsBut = document.querySelector('#logsBut')
+    if(homeBut.classList.contains("active"))
+        homeBut.classList.remove("active");
+    if(!(logsBut.classList.contains("active")))
+        logsBut.classList.add("active");
+</script>
+</body>
+</html>

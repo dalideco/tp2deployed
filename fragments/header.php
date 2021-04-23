@@ -28,10 +28,10 @@ session_start();
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item active" id="homeBut">
                         <a class="nav-link" href="home.php">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" id="logsBut">
                         <a href="logs.php" class="nav-link">Logs</a>
                     </li>
                     <li class="nav-item">

@@ -23,12 +23,7 @@
                     <input name="mail" value="<?=$information->mail?>">
                     <input name="password" value="<?=$information->password?>">
                     <input name="isAdmin" 
-                        value="<?php if($information->isadmin==1){?>
-                        1
-                        <?php }else{?>
-                        0
-                        <?php } ?>
-                        " 
+                        value="<?php if($information->isadmin==1){?>1<?php }else{?>0<?php } ?>" 
                         placeholder="1 if admin, 0 if not.">
                     <input type="file" name="image" >
                     <input type="hidden" name="oldImage" value="<?=$information->image?>">

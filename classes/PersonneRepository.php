@@ -23,11 +23,13 @@ class PersonneRepository extends Repository
     }
 
     public function findByIdAndDelete($id){
+        $mail = (self::findById($id))->mail;
+
         $request= "DELETE FROM ".$this->tableName ." where id = ?";
         $response =$this->bd->prepare($request);
         $response->execute([$id]);
 
-        $mail = (self::findById($id))->mail;
+        
         $actionDescription = self::actionDesc($id,$mail,"removing ");
 
     }

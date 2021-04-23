@@ -76,7 +76,7 @@ $personnes=$Repo->findAll();
             <td>New Person</td>
             <td><input type="text" name="mail"></td>
             <td><input type="password" name="password"></td>
-            <td><input type="text" name="isAdmin"></td>
+            <td><input type="text" name="isAdmin" placeholder="1 if admin, 0 if not."></td>
             <td><input type="file" name="image"></td>
             <td><button type="submit">Submit</button></td>
             

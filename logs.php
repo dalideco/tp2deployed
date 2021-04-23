@@ -12,7 +12,7 @@
  ?>
 
 <div>
-    <p>hello</p>
+
     <table class="table table-striped table-Info Info">
         <thead>
             <th>

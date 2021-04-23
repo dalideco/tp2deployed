@@ -22,7 +22,14 @@
                     <input type="hidden" name="id"  value="<?=$information->id ?>" >
                     <input name="mail" value="<?=$information->mail?>">
                     <input name="password" value="<?=$information->password?>">
-                    <input name="isAdmin" value="<?=$information->isadmin?>">
+                    <input name="isAdmin" 
+                        value="<?php if($information->isadmin==1){?>
+                        1
+                        <?php }else{?>
+                        0
+                        <?php } ?>
+                        " 
+                        placeholder="1 if admin, 0 if not.">
                     <input type="file" name="image" >
                     <input type="hidden" name="oldImage" value="<?=$information->image?>">
                     <div class="button mt-2 d-flex flex-row align-items-center">
